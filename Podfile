@@ -7,6 +7,7 @@ target 'ViperExample23' do
 	pod 'DITranquillity'
 	pod 'RxSwift', '6.5.0'
 	pod 'RxCocoa', '6.5.0'
+	pod 'MobileVLCKit' 
 
   # Pods for ViperExample23
   target 'ViperExample23Tests' do

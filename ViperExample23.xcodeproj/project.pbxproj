@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054C94F32AFE427E0025A6CC /* CameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C94F22AFE427E0025A6CC /* CameraCell.swift */; };
+		054C94F62AFE57090025A6CC /* VLCMediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C94F52AFE57090025A6CC /* VLCMediaPlayer.swift */; };
+		054C94F92AFE58890025A6CC /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C94F82AFE58890025A6CC /* PlayerView.swift */; };
 		0571159D2AFDE5BC00AD43D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0571159C2AFDE5BC00AD43D5 /* AppDelegate.swift */; };
 		0571159F2AFDE5BC00AD43D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0571159E2AFDE5BC00AD43D5 /* SceneDelegate.swift */; };
 		057115A12AFDE5BC00AD43D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057115A02AFDE5BC00AD43D5 /* ViewController.swift */; };
-		057115A42AFDE5BC00AD43D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057115A22AFDE5BC00AD43D5 /* Main.storyboard */; };
+		057115A42AFDE5BC00AD43D5 /* RTSPScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057115A22AFDE5BC00AD43D5 /* RTSPScreenViewController.storyboard */; };
 		057115A72AFDE5BC00AD43D5 /* ViperExample23.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 057115A52AFDE5BC00AD43D5 /* ViperExample23.xcdatamodeld */; };
 		057115A92AFDE5BE00AD43D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057115A82AFDE5BE00AD43D5 /* Assets.xcassets */; };
 		057115AC2AFDE5BE00AD43D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057115AA2AFDE5BE00AD43D5 /* LaunchScreen.storyboard */; };
@@ -18,26 +21,29 @@
 		057115C12AFDE5BE00AD43D5 /* ViperExample23UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057115C02AFDE5BE00AD43D5 /* ViperExample23UITests.swift */; };
 		057115C32AFDE5BE00AD43D5 /* ViperExample23UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057115C22AFDE5BE00AD43D5 /* ViperExample23UITestsLaunchTests.swift */; };
 		057116032AFE0A9C00AD43D5 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057116022AFE0A9C00AD43D5 /* Container.swift */; };
-		0FF8ED1AEC45B91E399AB2FF /* MainScreenInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A1ADD311DD57C47B5963B /* MainScreenInteractorInput.swift */; };
+		05B6D62B2AFE74EF0094558C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6D62A2AFE74EF0094558C /* UIColor.swift */; };
+		05B6D62D2AFE76190094558C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6D62C2AFE76190094558C /* UIView.swift */; };
+		05B6D62F2AFE77C10094558C /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6D62E2AFE77C10094558C /* UICollectionViewCell.swift */; };
+		0FF8ED1AEC45B91E399AB2FF /* RTSPScreenInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A1ADD311DD57C47B5963B /* RTSPScreenInteractorInput.swift */; };
 		1A0DB979E524A795EA7A7A30 /* MainScreenPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF1A48FFCFA321F2EFF42A /* MainScreenPresenterTests.swift */; };
-		1FE0FB63ABD42B4A11E10BB5 /* MainScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E87A5F7B0FDF028892A1220 /* MainScreenConfigurator.swift */; };
-		279906CB7E27C22F72794709 /* MainScreenInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD996CD39634F4CA709876 /* MainScreenInitializer.swift */; };
-		28127111A7C13FDBEECF7B50 /* MainScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89706B2B9AD1445D81EAD43 /* MainScreenModuleInput.swift */; };
+		1FE0FB63ABD42B4A11E10BB5 /* RTSPScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E87A5F7B0FDF028892A1220 /* RTSPScreenConfigurator.swift */; };
+		279906CB7E27C22F72794709 /* RTSPScreenInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD996CD39634F4CA709876 /* RTSPScreenInitializer.swift */; };
+		28127111A7C13FDBEECF7B50 /* RTSPScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89706B2B9AD1445D81EAD43 /* RTSPScreenModuleInput.swift */; };
 		3B0A678C5BB786CC4F2480D0 /* libPods-ViperExample23-ViperExample23UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96334B89B5AFA662F0E0936B /* libPods-ViperExample23-ViperExample23UITests.a */; };
-		560D29623A8161F58702E1E2 /* MainScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1BD4083A78F0501F9FB444 /* MainScreenViewOutput.swift */; };
+		560D29623A8161F58702E1E2 /* RTSPScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1BD4083A78F0501F9FB444 /* RTSPScreenViewOutput.swift */; };
 		5CDA3F30837C183B5AF604CB /* MainScreenViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DE1DB4CC0E6F4782A18F0 /* MainScreenViewTests.swift */; };
 		776803DF8DA931BFEAC517E9 /* MainScreenRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F40675530E1EE13DE939C5 /* MainScreenRouterTests.swift */; };
-		79112C9DA31F5D69E0CFF994 /* MainScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB97B68B0A624DBA10F76E81 /* MainScreenRouterInput.swift */; };
+		79112C9DA31F5D69E0CFF994 /* RTSPScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB97B68B0A624DBA10F76E81 /* RTSPScreenRouterInput.swift */; };
 		7B90B2B1B918068822ED1B06 /* libPods-ViperExample23Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6979368313C963DED95F4566 /* libPods-ViperExample23Tests.a */; };
 		9BF45BDC7F01B751AFB2BB55 /* MainScreenConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A3762840EA53E13209CC90 /* MainScreenConfiguratorTests.swift */; };
-		A76EC9B33F55A549B92E6063 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201F63A59FA2F17E780AE148 /* MainScreenViewController.swift */; };
-		B457148F9C625A9FFD8D337F /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB8001B2438EF60D61FE4B /* MainScreenRouter.swift */; };
+		A76EC9B33F55A549B92E6063 /* RTSPScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201F63A59FA2F17E780AE148 /* RTSPScreenViewController.swift */; };
+		B457148F9C625A9FFD8D337F /* RTSPScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB8001B2438EF60D61FE4B /* RTSPScreenRouter.swift */; };
 		B9EE42FF650A58068C0E7287 /* libPods-ViperExample23.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B842124AFD9B68E49182D76 /* libPods-ViperExample23.a */; };
 		C5395C09E28B270D84D625FC /* MainScreenInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F9B6FC933A63992490C622 /* MainScreenInteractorTests.swift */; };
-		D878CE62F11CED6F791D5CBE /* MainScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75FB5D7C3F2EF4E48C91A6 /* MainScreenViewInput.swift */; };
-		D88200E6D4B9ACF6F6B03F0D /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5CF16246F147FEC0DB788 /* MainScreenInteractor.swift */; };
-		DFC0ABC5540D20ED006D0FD0 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4817D87896C8D3DB232C06 /* MainScreenPresenter.swift */; };
-		FD97705E96E4D010323E5944 /* MainScreenInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65ECDF72AA690A005D718C1 /* MainScreenInteractorOutput.swift */; };
+		D878CE62F11CED6F791D5CBE /* RTSPScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75FB5D7C3F2EF4E48C91A6 /* RTSPScreenViewInput.swift */; };
+		D88200E6D4B9ACF6F6B03F0D /* RTSPScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5CF16246F147FEC0DB788 /* RTSPScreenInteractor.swift */; };
+		DFC0ABC5540D20ED006D0FD0 /* RTSPScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4817D87896C8D3DB232C06 /* RTSPScreenPresenter.swift */; };
+		FD97705E96E4D010323E5944 /* RTSPScreenInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65ECDF72AA690A005D718C1 /* RTSPScreenInteractorOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +64,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01CB8001B2438EF60D61FE4B /* MainScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		01CB8001B2438EF60D61FE4B /* RTSPScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenRouter.swift; sourceTree = "<group>"; };
 		0397F4CE1C808353294F5DAF /* Pods-ViperExample23-ViperExample23UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample23-ViperExample23UITests.debug.xcconfig"; path = "Target Support Files/Pods-ViperExample23-ViperExample23UITests/Pods-ViperExample23-ViperExample23UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		054C94F22AFE427E0025A6CC /* CameraCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCell.swift; sourceTree = "<group>"; };
+		054C94F52AFE57090025A6CC /* VLCMediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLCMediaPlayer.swift; sourceTree = "<group>"; };
+		054C94F82AFE58890025A6CC /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		057115992AFDE5BC00AD43D5 /* ViperExample23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperExample23.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0571159C2AFDE5BC00AD43D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0571159E2AFDE5BC00AD43D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		057115A02AFDE5BC00AD43D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		057115A32AFDE5BC00AD43D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		057115A32AFDE5BC00AD43D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RTSPScreenViewController.storyboard; sourceTree = "<group>"; };
 		057115A62AFDE5BC00AD43D5 /* ViperExample23.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViperExample23.xcdatamodel; sourceTree = "<group>"; };
 		057115A82AFDE5BE00AD43D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		057115AB2AFDE5BE00AD43D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,30 +84,33 @@
 		057115C02AFDE5BE00AD43D5 /* ViperExample23UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperExample23UITests.swift; sourceTree = "<group>"; };
 		057115C22AFDE5BE00AD43D5 /* ViperExample23UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperExample23UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		057116022AFE0A9C00AD43D5 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		05B6D62A2AFE74EF0094558C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		05B6D62C2AFE76190094558C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		05B6D62E2AFE77C10094558C /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		10F40675530E1EE13DE939C5 /* MainScreenRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenRouterTests.swift; sourceTree = "<group>"; };
-		201F63A59FA2F17E780AE148 /* MainScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
-		2FE5CF16246F147FEC0DB788 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
+		201F63A59FA2F17E780AE148 /* RTSPScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenViewController.swift; sourceTree = "<group>"; };
+		2FE5CF16246F147FEC0DB788 /* RTSPScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenInteractor.swift; sourceTree = "<group>"; };
 		50D166C520A8F8C2AC4ADCDB /* Pods-ViperExample23.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample23.debug.xcconfig"; path = "Target Support Files/Pods-ViperExample23/Pods-ViperExample23.debug.xcconfig"; sourceTree = "<group>"; };
 		5AE720E659AB41D07F5EF98E /* Pods-ViperExample23Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample23Tests.release.xcconfig"; path = "Target Support Files/Pods-ViperExample23Tests/Pods-ViperExample23Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6979368313C963DED95F4566 /* libPods-ViperExample23Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViperExample23Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D1BD4083A78F0501F9FB444 /* MainScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenViewOutput.swift; sourceTree = "<group>"; };
-		6E87A5F7B0FDF028892A1220 /* MainScreenConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenConfigurator.swift; sourceTree = "<group>"; };
+		6D1BD4083A78F0501F9FB444 /* RTSPScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenViewOutput.swift; sourceTree = "<group>"; };
+		6E87A5F7B0FDF028892A1220 /* RTSPScreenConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenConfigurator.swift; sourceTree = "<group>"; };
 		6EF2D047AB9E41C84065EC11 /* Pods-ViperExample23-ViperExample23UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample23-ViperExample23UITests.release.xcconfig"; path = "Target Support Files/Pods-ViperExample23-ViperExample23UITests/Pods-ViperExample23-ViperExample23UITests.release.xcconfig"; sourceTree = "<group>"; };
 		86A3762840EA53E13209CC90 /* MainScreenConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenConfiguratorTests.swift; sourceTree = "<group>"; };
-		947A1ADD311DD57C47B5963B /* MainScreenInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractorInput.swift; sourceTree = "<group>"; };
+		947A1ADD311DD57C47B5963B /* RTSPScreenInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenInteractorInput.swift; sourceTree = "<group>"; };
 		96334B89B5AFA662F0E0936B /* libPods-ViperExample23-ViperExample23UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViperExample23-ViperExample23UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		965023941135552549A97BE4 /* Pods-ViperExample23.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample23.release.xcconfig"; path = "Target Support Files/Pods-ViperExample23/Pods-ViperExample23.release.xcconfig"; sourceTree = "<group>"; };
 		9ACF1A48FFCFA321F2EFF42A /* MainScreenPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenPresenterTests.swift; sourceTree = "<group>"; };
 		9B842124AFD9B68E49182D76 /* libPods-ViperExample23.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViperExample23.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F9B6FC933A63992490C622 /* MainScreenInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractorTests.swift; sourceTree = "<group>"; };
 		A61D4185818CDD9C47A82703 /* Pods-ViperExample23Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample23Tests.debug.xcconfig"; path = "Target Support Files/Pods-ViperExample23Tests/Pods-ViperExample23Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B89706B2B9AD1445D81EAD43 /* MainScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenModuleInput.swift; sourceTree = "<group>"; };
-		BB4817D87896C8D3DB232C06 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
-		BC75FB5D7C3F2EF4E48C91A6 /* MainScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenViewInput.swift; sourceTree = "<group>"; };
-		C65ECDF72AA690A005D718C1 /* MainScreenInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractorOutput.swift; sourceTree = "<group>"; };
+		B89706B2B9AD1445D81EAD43 /* RTSPScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenModuleInput.swift; sourceTree = "<group>"; };
+		BB4817D87896C8D3DB232C06 /* RTSPScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenPresenter.swift; sourceTree = "<group>"; };
+		BC75FB5D7C3F2EF4E48C91A6 /* RTSPScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenViewInput.swift; sourceTree = "<group>"; };
+		C65ECDF72AA690A005D718C1 /* RTSPScreenInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenInteractorOutput.swift; sourceTree = "<group>"; };
 		DA0DE1DB4CC0E6F4782A18F0 /* MainScreenViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenViewTests.swift; sourceTree = "<group>"; };
-		FB97B68B0A624DBA10F76E81 /* MainScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenRouterInput.swift; sourceTree = "<group>"; };
-		FCFD996CD39634F4CA709876 /* MainScreenInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInitializer.swift; sourceTree = "<group>"; };
+		FB97B68B0A624DBA10F76E81 /* RTSPScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenRouterInput.swift; sourceTree = "<group>"; };
+		FCFD996CD39634F4CA709876 /* RTSPScreenInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenInitializer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +153,31 @@
 			path = MainScreen;
 			sourceTree = "<group>";
 		};
+		054C94F12AFE426B0025A6CC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				054C94F72AFE58760025A6CC /* components */,
+				054C94F22AFE427E0025A6CC /* CameraCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		054C94F42AFE56ED0025A6CC /* VLCMediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				054C94F52AFE57090025A6CC /* VLCMediaPlayer.swift */,
+			);
+			path = VLCMediaPlayer;
+			sourceTree = "<group>";
+		};
+		054C94F72AFE58760025A6CC /* components */ = {
+			isa = PBXGroup;
+			children = (
+				054C94F82AFE58890025A6CC /* PlayerView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		057115902AFDE5BC00AD43D5 = {
 			isa = PBXGroup;
 			children = (
@@ -166,12 +203,12 @@
 		0571159B2AFDE5BC00AD43D5 /* ViperExample23 */ = {
 			isa = PBXGroup;
 			children = (
+				05B6D6282AFE74D00094558C /* Helpers */,
 				057115D02AFDE87900AD43D5 /* VIPER */,
 				057115CF2AFDE86E00AD43D5 /* Services */,
 				0571159C2AFDE5BC00AD43D5 /* AppDelegate.swift */,
 				0571159E2AFDE5BC00AD43D5 /* SceneDelegate.swift */,
 				057115A02AFDE5BC00AD43D5 /* ViewController.swift */,
-				057115A22AFDE5BC00AD43D5 /* Main.storyboard */,
 				057115A82AFDE5BE00AD43D5 /* Assets.xcassets */,
 				057115AA2AFDE5BE00AD43D5 /* LaunchScreen.storyboard */,
 				057115AD2AFDE5BE00AD43D5 /* Info.plist */,
@@ -201,6 +238,7 @@
 		057115CF2AFDE86E00AD43D5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				054C94F42AFE56ED0025A6CC /* VLCMediaPlayer */,
 				057116012AFE0A9100AD43D5 /* DI */,
 			);
 			path = Services;
@@ -209,7 +247,7 @@
 		057115D02AFDE87900AD43D5 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				929A8F803EF8559802536B56 /* MainScreen */,
+				929A8F803EF8559802536B56 /* RTSPScreen */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -220,6 +258,24 @@
 				057116022AFE0A9C00AD43D5 /* Container.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		05B6D6282AFE74D00094558C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				05B6D6292AFE74D80094558C /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		05B6D6292AFE74D80094558C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				05B6D62A2AFE74EF0094558C /* UIColor.swift */,
+				05B6D62C2AFE76190094558C /* UIView.swift */,
+				05B6D62E2AFE77C10094558C /* UICollectionViewCell.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		129DF9D272F6A052C0CBC2B2 /* Presenter */ = {
@@ -293,7 +349,7 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
-		929A8F803EF8559802536B56 /* MainScreen */ = {
+		929A8F803EF8559802536B56 /* RTSPScreen */ = {
 			isa = PBXGroup;
 			children = (
 				9618BE8C9556D7C387646294 /* View */,
@@ -302,15 +358,17 @@
 				F86A1ED87EE2390A21563259 /* Router */,
 				AFA6B98FE2BA93BCB27A7533 /* Configurator */,
 			);
-			path = MainScreen;
+			path = RTSPScreen;
 			sourceTree = "<group>";
 		};
 		9618BE8C9556D7C387646294 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BC75FB5D7C3F2EF4E48C91A6 /* MainScreenViewInput.swift */,
-				6D1BD4083A78F0501F9FB444 /* MainScreenViewOutput.swift */,
-				201F63A59FA2F17E780AE148 /* MainScreenViewController.swift */,
+				054C94F12AFE426B0025A6CC /* Cells */,
+				BC75FB5D7C3F2EF4E48C91A6 /* RTSPScreenViewInput.swift */,
+				6D1BD4083A78F0501F9FB444 /* RTSPScreenViewOutput.swift */,
+				201F63A59FA2F17E780AE148 /* RTSPScreenViewController.swift */,
+				057115A22AFDE5BC00AD43D5 /* RTSPScreenViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,8 +376,8 @@
 		A97CF06ECB5A00FF1D977C24 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				B89706B2B9AD1445D81EAD43 /* MainScreenModuleInput.swift */,
-				BB4817D87896C8D3DB232C06 /* MainScreenPresenter.swift */,
+				B89706B2B9AD1445D81EAD43 /* RTSPScreenModuleInput.swift */,
+				BB4817D87896C8D3DB232C06 /* RTSPScreenPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -327,8 +385,8 @@
 		AFA6B98FE2BA93BCB27A7533 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				6E87A5F7B0FDF028892A1220 /* MainScreenConfigurator.swift */,
-				FCFD996CD39634F4CA709876 /* MainScreenInitializer.swift */,
+				6E87A5F7B0FDF028892A1220 /* RTSPScreenConfigurator.swift */,
+				FCFD996CD39634F4CA709876 /* RTSPScreenInitializer.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -336,9 +394,9 @@
 		C85C717244E1D8D31A897A83 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				947A1ADD311DD57C47B5963B /* MainScreenInteractorInput.swift */,
-				C65ECDF72AA690A005D718C1 /* MainScreenInteractorOutput.swift */,
-				2FE5CF16246F147FEC0DB788 /* MainScreenInteractor.swift */,
+				947A1ADD311DD57C47B5963B /* RTSPScreenInteractorInput.swift */,
+				C65ECDF72AA690A005D718C1 /* RTSPScreenInteractorOutput.swift */,
+				2FE5CF16246F147FEC0DB788 /* RTSPScreenInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -346,8 +404,8 @@
 		F86A1ED87EE2390A21563259 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				FB97B68B0A624DBA10F76E81 /* MainScreenRouterInput.swift */,
-				01CB8001B2438EF60D61FE4B /* MainScreenRouter.swift */,
+				FB97B68B0A624DBA10F76E81 /* RTSPScreenRouterInput.swift */,
+				01CB8001B2438EF60D61FE4B /* RTSPScreenRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -363,6 +421,7 @@
 				057115952AFDE5BC00AD43D5 /* Sources */,
 				057115962AFDE5BC00AD43D5 /* Frameworks */,
 				057115972AFDE5BC00AD43D5 /* Resources */,
+				4F607E78798813EF18E560CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,6 +459,7 @@
 				057115B82AFDE5BE00AD43D5 /* Sources */,
 				057115B92AFDE5BE00AD43D5 /* Frameworks */,
 				057115BA2AFDE5BE00AD43D5 /* Resources */,
+				84BD5275CDBFAF3FD16338CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -461,7 +521,7 @@
 			files = (
 				057115AC2AFDE5BE00AD43D5 /* LaunchScreen.storyboard in Resources */,
 				057115A92AFDE5BE00AD43D5 /* Assets.xcassets in Resources */,
-				057115A42AFDE5BC00AD43D5 /* Main.storyboard in Resources */,
+				057115A42AFDE5BC00AD43D5 /* RTSPScreenViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +542,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4F607E78798813EF18E560CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViperExample23/Pods-ViperExample23-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViperExample23/Pods-ViperExample23-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViperExample23/Pods-ViperExample23-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7D51A1C25E0FCF45C8F4CD84 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -502,6 +579,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84BD5275CDBFAF3FD16338CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViperExample23-ViperExample23UITests/Pods-ViperExample23-ViperExample23UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViperExample23-ViperExample23UITests/Pods-ViperExample23-ViperExample23UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViperExample23-ViperExample23UITests/Pods-ViperExample23-ViperExample23UITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B08A41C1915CF3540BA68469 /* [CP] Check Pods Manifest.lock */ = {
@@ -556,21 +650,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				057115A12AFDE5BC00AD43D5 /* ViewController.swift in Sources */,
+				05B6D62B2AFE74EF0094558C /* UIColor.swift in Sources */,
+				05B6D62D2AFE76190094558C /* UIView.swift in Sources */,
 				0571159D2AFDE5BC00AD43D5 /* AppDelegate.swift in Sources */,
 				057115A72AFDE5BC00AD43D5 /* ViperExample23.xcdatamodeld in Sources */,
+				054C94F92AFE58890025A6CC /* PlayerView.swift in Sources */,
 				0571159F2AFDE5BC00AD43D5 /* SceneDelegate.swift in Sources */,
-				D878CE62F11CED6F791D5CBE /* MainScreenViewInput.swift in Sources */,
-				560D29623A8161F58702E1E2 /* MainScreenViewOutput.swift in Sources */,
-				A76EC9B33F55A549B92E6063 /* MainScreenViewController.swift in Sources */,
-				28127111A7C13FDBEECF7B50 /* MainScreenModuleInput.swift in Sources */,
-				DFC0ABC5540D20ED006D0FD0 /* MainScreenPresenter.swift in Sources */,
-				0FF8ED1AEC45B91E399AB2FF /* MainScreenInteractorInput.swift in Sources */,
-				FD97705E96E4D010323E5944 /* MainScreenInteractorOutput.swift in Sources */,
-				D88200E6D4B9ACF6F6B03F0D /* MainScreenInteractor.swift in Sources */,
-				79112C9DA31F5D69E0CFF994 /* MainScreenRouterInput.swift in Sources */,
-				B457148F9C625A9FFD8D337F /* MainScreenRouter.swift in Sources */,
-				1FE0FB63ABD42B4A11E10BB5 /* MainScreenConfigurator.swift in Sources */,
-				279906CB7E27C22F72794709 /* MainScreenInitializer.swift in Sources */,
+				D878CE62F11CED6F791D5CBE /* RTSPScreenViewInput.swift in Sources */,
+				560D29623A8161F58702E1E2 /* RTSPScreenViewOutput.swift in Sources */,
+				054C94F32AFE427E0025A6CC /* CameraCell.swift in Sources */,
+				05B6D62F2AFE77C10094558C /* UICollectionViewCell.swift in Sources */,
+				A76EC9B33F55A549B92E6063 /* RTSPScreenViewController.swift in Sources */,
+				28127111A7C13FDBEECF7B50 /* RTSPScreenModuleInput.swift in Sources */,
+				DFC0ABC5540D20ED006D0FD0 /* RTSPScreenPresenter.swift in Sources */,
+				054C94F62AFE57090025A6CC /* VLCMediaPlayer.swift in Sources */,
+				0FF8ED1AEC45B91E399AB2FF /* RTSPScreenInteractorInput.swift in Sources */,
+				FD97705E96E4D010323E5944 /* RTSPScreenInteractorOutput.swift in Sources */,
+				D88200E6D4B9ACF6F6B03F0D /* RTSPScreenInteractor.swift in Sources */,
+				79112C9DA31F5D69E0CFF994 /* RTSPScreenRouterInput.swift in Sources */,
+				B457148F9C625A9FFD8D337F /* RTSPScreenRouter.swift in Sources */,
+				1FE0FB63ABD42B4A11E10BB5 /* RTSPScreenConfigurator.swift in Sources */,
+				279906CB7E27C22F72794709 /* RTSPScreenInitializer.swift in Sources */,
 				057116032AFE0A9C00AD43D5 /* Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,12 +713,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		057115A22AFDE5BC00AD43D5 /* Main.storyboard */ = {
+		057115A22AFDE5BC00AD43D5 /* RTSPScreenViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				057115A32AFDE5BC00AD43D5 /* Base */,
 			);
-			name = Main.storyboard;
+			name = RTSPScreenViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		057115AA2AFDE5BE00AD43D5 /* LaunchScreen.storyboard */ = {
@@ -760,11 +860,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7Y5W7Z4P4X;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ViperExample23/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -788,11 +888,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7Y5W7Z4P4X;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ViperExample23/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

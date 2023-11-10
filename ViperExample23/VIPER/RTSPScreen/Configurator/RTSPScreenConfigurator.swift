@@ -1,5 +1,5 @@
 //
-//  MainScreenMainScreenConfigurator.swift
+//  RTSPScreenConfigurator.swift
 //  ViperExample23
 //
 //  Created by Maksim Ponomarev on 10/11/2023.
@@ -8,24 +8,24 @@
 
 import UIKit
 
-class MainScreenModuleConfigurator {
+class RTSPScreenModuleConfigurator {
 
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
 
-        if let viewController = viewInput as? MainScreenViewController {
+        if let viewController = viewInput as? RTSPScreenViewController {
             configure(viewController: viewController)
         }
     }
 
-    private func configure(viewController: MainScreenViewController) {
+    private func configure(viewController: RTSPScreenViewController) {
 
-        let router = MainScreenRouter()
+        let router = RTSPScreenRouter()
 
-        let presenter = MainScreenPresenter()
+        let presenter = RTSPScreenPresenter()
         presenter.view = viewController
         presenter.router = router
 
-        let interactor = MainScreenInteractor()
+        let interactor = RTSPScreenInteractor()
         interactor.output = presenter
 
         presenter.interactor = interactor

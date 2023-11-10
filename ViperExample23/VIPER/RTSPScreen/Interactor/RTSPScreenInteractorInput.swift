@@ -1,5 +1,5 @@
 //
-//  MainScreenMainScreenInteractorOutput.swift
+//  RTSPScreenInteractorInput.swift
 //  ViperExample23
 //
 //  Created by Maksim Ponomarev on 10/11/2023.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol MainScreenInteractorOutput: class {
+protocol RTSPScreenInteractorInput {
 
 }

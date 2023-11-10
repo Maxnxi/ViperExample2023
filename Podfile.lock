@@ -1,6 +1,7 @@
 PODS:
   - DITranquillity (4.5.2):
     - SwiftLazy (>= 1.2.0)
+  - MobileVLCKit (3.5.1)
   - RxBlocking (6.5.0):
     - RxSwift (= 6.5.0)
   - RxCocoa (6.5.0):
@@ -15,6 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - DITranquillity
+  - MobileVLCKit
   - RxBlocking (= 6.5.0)
   - RxCocoa (= 6.5.0)
   - RxSwift (= 6.5.0)
@@ -23,6 +25,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - DITranquillity
+    - MobileVLCKit
     - RxBlocking
     - RxCocoa
     - RxRelay
@@ -32,6 +35,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   DITranquillity: bfa3ef3f4358a7b1bae3717f64494a147ec2caab
+  MobileVLCKit: 144d5f565512d1147d63b0fa1379231b3fd66535
   RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
@@ -39,6 +43,6 @@ SPEC CHECKSUMS:
   RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
   SwiftLazy: 39910f792aefc7bdaf734b4b36a54edcaaf2dc93
 
-PODFILE CHECKSUM: f8b3ba2b9651f88582bb10a54574123d8bea6ae5
+PODFILE CHECKSUM: 0679e4b1ae3404f8c7dbc70b4040be06253c9c88
 
 COCOAPODS: 1.12.1

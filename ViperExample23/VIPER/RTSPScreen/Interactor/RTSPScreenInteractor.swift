@@ -6,8 +6,8 @@
 //  Copyright © 2023 Max. All rights reserved.
 //
 
-class MainScreenInteractor: MainScreenInteractorInput {
+class RTSPScreenInteractor: RTSPScreenInteractorInput {
 
-    weak var output: MainScreenInteractorOutput!
+    weak var output: RTSPScreenInteractorOutput?
 
 }
