@@ -4,3 +4,9 @@
 <p align="left">
 <a href="https://github.com/Maxnxi/ViperExampleNovember2023"><img src="https://img.shields.io/badge/platform-ios-green"></a>
 </p>
+
+Description:
+
+generating Viper modules by Rambler Generamba
+
+DI: Swinject
