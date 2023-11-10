@@ -121,7 +121,6 @@
 				129DF9D272F6A052C0CBC2B2 /* Presenter */,
 				20EEE79DA22AF16EB95DD0F1 /* Router */,
 			);
-			name = MainScreen;
 			path = MainScreen;
 			sourceTree = "<group>";
 		};
@@ -132,8 +131,6 @@
 				057115B52AFDE5BE00AD43D5 /* ViperExample23Tests */,
 				057115BF2AFDE5BE00AD43D5 /* ViperExample23UITests */,
 				0571159A2AFDE5BC00AD43D5 /* Products */,
-				B18CA3781428BCD70D6A310B /* VIPER */,
-				71B4488B0F58925B777F2897 /* ViperTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +164,7 @@
 		057115B52AFDE5BE00AD43D5 /* ViperExample23Tests */ = {
 			isa = PBXGroup;
 			children = (
+				71B4488B0F58925B777F2897 /* ViperTests */,
 				057115B62AFDE5BE00AD43D5 /* ViperExample23Tests.swift */,
 			);
 			path = ViperExample23Tests;
@@ -191,6 +189,7 @@
 		057115D02AFDE87900AD43D5 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				929A8F803EF8559802536B56 /* MainScreen */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -200,7 +199,6 @@
 			children = (
 				9ACF1A48FFCFA321F2EFF42A /* MainScreenPresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -209,7 +207,6 @@
 			children = (
 				10F40675530E1EE13DE939C5 /* MainScreenRouterTests.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -218,7 +215,6 @@
 			children = (
 				DA0DE1DB4CC0E6F4782A18F0 /* MainScreenViewTests.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -227,7 +223,6 @@
 			children = (
 				A3F9B6FC933A63992490C622 /* MainScreenInteractorTests.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -236,7 +231,6 @@
 			children = (
 				0122BEFCE4AE066DB77DCFF9 /* MainScreen */,
 			);
-			name = ViperTests;
 			path = ViperTests;
 			sourceTree = "<group>";
 		};
@@ -245,7 +239,6 @@
 			children = (
 				86A3762840EA53E13209CC90 /* MainScreenConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -258,7 +251,6 @@
 				F86A1ED87EE2390A21563259 /* Router */,
 				AFA6B98FE2BA93BCB27A7533 /* Configurator */,
 			);
-			name = MainScreen;
 			path = MainScreen;
 			sourceTree = "<group>";
 		};
@@ -269,7 +261,6 @@
 				6D1BD4083A78F0501F9FB444 /* MainScreenViewOutput.swift */,
 				201F63A59FA2F17E780AE148 /* MainScreenViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -279,7 +270,6 @@
 				B89706B2B9AD1445D81EAD43 /* MainScreenModuleInput.swift */,
 				BB4817D87896C8D3DB232C06 /* MainScreenPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -289,17 +279,7 @@
 				6E87A5F7B0FDF028892A1220 /* MainScreenConfigurator.swift */,
 				FCFD996CD39634F4CA709876 /* MainScreenInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
-			sourceTree = "<group>";
-		};
-		B18CA3781428BCD70D6A310B /* VIPER */ = {
-			isa = PBXGroup;
-			children = (
-				929A8F803EF8559802536B56 /* MainScreen */,
-			);
-			name = VIPER;
-			path = VIPER;
 			sourceTree = "<group>";
 		};
 		C85C717244E1D8D31A897A83 /* Interactor */ = {
@@ -309,7 +289,6 @@
 				C65ECDF72AA690A005D718C1 /* MainScreenInteractorOutput.swift */,
 				2FE5CF16246F147FEC0DB788 /* MainScreenInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -319,7 +298,6 @@
 				FB97B68B0A624DBA10F76E81 /* MainScreenRouterInput.swift */,
 				01CB8001B2438EF60D61FE4B /* MainScreenRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};

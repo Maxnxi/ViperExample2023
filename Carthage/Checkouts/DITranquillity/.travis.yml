@@ -1,0 +1,48 @@
+language: swift
+env:
+  global:
+    - LC_CTYPE=en_US.UTF-8
+    - PROJECT=DITranquillity.xcworkspace
+git:
+  submodules: false
+matrix:
+  include:
+    - env: JOB="LINUX_spm" SWIFT_VERSION="5.0"
+      os: linux
+      language: generic
+      sudo: required
+      dist: trusty
+      before_install:
+        - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
+      script:
+        - swift build
+    - env: JOB="POD_lint"
+      osx_image: xcode11.2
+      before_install:
+      script:
+        - pod lib lint
+    - env: JOB="CARTHAGE_lint"
+      osx_image: xcode11.2
+      before_install:
+        - curl -L -O https://github.com/Carthage/Carthage/releases/download/0.33.0/Carthage.pkg
+        - sudo installer -pkg Carthage.pkg -target /
+        - rm Carthage.pkg
+      script:
+        - cd SetupDependencies
+        - carthage bootstrap
+    - env: JOB="XCODE_OSX" DEST="arch=x86_64" SCHEME="DITranquillity-OSX" SDK="macosx" ACTION="build" PLATFORM="OSX" ISTESTS=NO CONF=Release
+      osx_image: xcode11.2
+    - env: JOB="XCODE_tvOS" DEST="OS=13.2,name=Apple TV 4K" SCHEME="DITranquillity-tvOS" SDK="appletvsimulator" ACTION="build" PLATFORM="tvOS" ISTESTS=NO CONF=Release
+      osx_image: xcode11.2
+    - env: JOB="XCODE_watchOS" DEST="OS=5.0,name=Apple Watch Series 4 - 40mm" SCHEME="DITranquillity-WatchOS" SDK="watchsimulator" ACTION="build" PLATFORM="watchOS" ISTESTS=NO CONF=Release
+      osx_image: xcode11.2
+    - env: JOB="XCODE_iOS" DEST="OS=13.2.2,name=iPhone 11" SCHEME="DITranquillity-iOS" SDK="iphonesimulator" ACTION="build" PLATFORM="iOS" ISTESTS=NO CONF=Release
+      osx_image: xcode11.2
+    - env: JOB="XCODE_TESTS" DEST="OS=13.2.2,name=iPhone 11" SCHEME="DITranquillity-iOS" SDK="iphonesimulator" ACTION="test" PLATFORM="iOS" ISTESTS=YES CONF=Debug
+      osx_image: xcode11.2
+      after_success:
+        - bash <(curl -s https://codecov.io/bash) -J 'DITranquillity' -t 878c72a2-ad50-4fd2-84bf-1fe4fba5d260
+
+script:
+  - set -o pipefail
+  - xcodebuild "$ACTION" -workspace "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DEST" -configuration $CONF ENABLE_TESTABILITY=$ISTESTS | xcpretty
