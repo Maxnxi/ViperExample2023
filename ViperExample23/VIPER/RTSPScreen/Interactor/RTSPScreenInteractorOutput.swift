@@ -9,5 +9,5 @@
 import Foundation
 
 protocol RTSPScreenInteractorOutput: class {
-
+    func succesFetchCamerasIPs(ips: [String])
 }

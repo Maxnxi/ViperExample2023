@@ -1,5 +1,5 @@
 //
-//  MainScreenMainScreenViewInput.swift
+//  RTSPScreenViewInput.swift
 //  ViperExample23
 //
 //  Created by Maksim Ponomarev on 10/11/2023.
@@ -7,11 +7,7 @@
 //
 
 protocol RTSPScreenViewInput: class {
-
-    /**
-        @author Maksim Ponomarev
-        Setup initial state of the view
-    */
-
+    
     func setupInitialState()
+    func updateViewWithCamerasIps(ips: [String])
 }

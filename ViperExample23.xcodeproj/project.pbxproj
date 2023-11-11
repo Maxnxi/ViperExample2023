@@ -10,6 +10,8 @@
 		054C94F32AFE427E0025A6CC /* CameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C94F22AFE427E0025A6CC /* CameraCell.swift */; };
 		054C94F62AFE57090025A6CC /* VLCMediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C94F52AFE57090025A6CC /* VLCMediaPlayer.swift */; };
 		054C94F92AFE58890025A6CC /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C94F82AFE58890025A6CC /* PlayerView.swift */; };
+		054C94FC2AFF33F60025A6CC /* CamerasIPFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C94FB2AFF33F60025A6CC /* CamerasIPFetchService.swift */; };
+		054C94FE2AFF4A220025A6CC /* RTSPScreenViewControllerNoRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C94FD2AFF4A220025A6CC /* RTSPScreenViewControllerNoRx.swift */; };
 		0571159D2AFDE5BC00AD43D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0571159C2AFDE5BC00AD43D5 /* AppDelegate.swift */; };
 		0571159F2AFDE5BC00AD43D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0571159E2AFDE5BC00AD43D5 /* SceneDelegate.swift */; };
 		057115A12AFDE5BC00AD43D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057115A02AFDE5BC00AD43D5 /* ViewController.swift */; };
@@ -36,7 +38,7 @@
 		79112C9DA31F5D69E0CFF994 /* RTSPScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB97B68B0A624DBA10F76E81 /* RTSPScreenRouterInput.swift */; };
 		7B90B2B1B918068822ED1B06 /* libPods-ViperExample23Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6979368313C963DED95F4566 /* libPods-ViperExample23Tests.a */; };
 		9BF45BDC7F01B751AFB2BB55 /* MainScreenConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A3762840EA53E13209CC90 /* MainScreenConfiguratorTests.swift */; };
-		A76EC9B33F55A549B92E6063 /* RTSPScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201F63A59FA2F17E780AE148 /* RTSPScreenViewController.swift */; };
+		A76EC9B33F55A549B92E6063 /* RTSPScreenViewControllerRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201F63A59FA2F17E780AE148 /* RTSPScreenViewControllerRx.swift */; };
 		B457148F9C625A9FFD8D337F /* RTSPScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB8001B2438EF60D61FE4B /* RTSPScreenRouter.swift */; };
 		B9EE42FF650A58068C0E7287 /* libPods-ViperExample23.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B842124AFD9B68E49182D76 /* libPods-ViperExample23.a */; };
 		C5395C09E28B270D84D625FC /* MainScreenInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F9B6FC933A63992490C622 /* MainScreenInteractorTests.swift */; };
@@ -69,6 +71,8 @@
 		054C94F22AFE427E0025A6CC /* CameraCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCell.swift; sourceTree = "<group>"; };
 		054C94F52AFE57090025A6CC /* VLCMediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLCMediaPlayer.swift; sourceTree = "<group>"; };
 		054C94F82AFE58890025A6CC /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		054C94FB2AFF33F60025A6CC /* CamerasIPFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamerasIPFetchService.swift; sourceTree = "<group>"; };
+		054C94FD2AFF4A220025A6CC /* RTSPScreenViewControllerNoRx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSPScreenViewControllerNoRx.swift; sourceTree = "<group>"; };
 		057115992AFDE5BC00AD43D5 /* ViperExample23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperExample23.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0571159C2AFDE5BC00AD43D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0571159E2AFDE5BC00AD43D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +92,7 @@
 		05B6D62C2AFE76190094558C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		05B6D62E2AFE77C10094558C /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		10F40675530E1EE13DE939C5 /* MainScreenRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenRouterTests.swift; sourceTree = "<group>"; };
-		201F63A59FA2F17E780AE148 /* RTSPScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenViewController.swift; sourceTree = "<group>"; };
+		201F63A59FA2F17E780AE148 /* RTSPScreenViewControllerRx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenViewControllerRx.swift; sourceTree = "<group>"; };
 		2FE5CF16246F147FEC0DB788 /* RTSPScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RTSPScreenInteractor.swift; sourceTree = "<group>"; };
 		50D166C520A8F8C2AC4ADCDB /* Pods-ViperExample23.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample23.debug.xcconfig"; path = "Target Support Files/Pods-ViperExample23/Pods-ViperExample23.debug.xcconfig"; sourceTree = "<group>"; };
 		5AE720E659AB41D07F5EF98E /* Pods-ViperExample23Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample23Tests.release.xcconfig"; path = "Target Support Files/Pods-ViperExample23Tests/Pods-ViperExample23Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +182,14 @@
 			path = components;
 			sourceTree = "<group>";
 		};
+		054C94FA2AFF33E70025A6CC /* CamerasIPFetch */ = {
+			isa = PBXGroup;
+			children = (
+				054C94FB2AFF33F60025A6CC /* CamerasIPFetchService.swift */,
+			);
+			path = CamerasIPFetch;
+			sourceTree = "<group>";
+		};
 		057115902AFDE5BC00AD43D5 = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +250,7 @@
 		057115CF2AFDE86E00AD43D5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				054C94FA2AFF33E70025A6CC /* CamerasIPFetch */,
 				054C94F42AFE56ED0025A6CC /* VLCMediaPlayer */,
 				057116012AFE0A9100AD43D5 /* DI */,
 			);
@@ -367,7 +380,8 @@
 				054C94F12AFE426B0025A6CC /* Cells */,
 				BC75FB5D7C3F2EF4E48C91A6 /* RTSPScreenViewInput.swift */,
 				6D1BD4083A78F0501F9FB444 /* RTSPScreenViewOutput.swift */,
-				201F63A59FA2F17E780AE148 /* RTSPScreenViewController.swift */,
+				201F63A59FA2F17E780AE148 /* RTSPScreenViewControllerRx.swift */,
+				054C94FD2AFF4A220025A6CC /* RTSPScreenViewControllerNoRx.swift */,
 				057115A22AFDE5BC00AD43D5 /* RTSPScreenViewController.storyboard */,
 			);
 			path = View;
@@ -649,6 +663,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054C94FE2AFF4A220025A6CC /* RTSPScreenViewControllerNoRx.swift in Sources */,
 				057115A12AFDE5BC00AD43D5 /* ViewController.swift in Sources */,
 				05B6D62B2AFE74EF0094558C /* UIColor.swift in Sources */,
 				05B6D62D2AFE76190094558C /* UIView.swift in Sources */,
@@ -660,8 +675,9 @@
 				560D29623A8161F58702E1E2 /* RTSPScreenViewOutput.swift in Sources */,
 				054C94F32AFE427E0025A6CC /* CameraCell.swift in Sources */,
 				05B6D62F2AFE77C10094558C /* UICollectionViewCell.swift in Sources */,
-				A76EC9B33F55A549B92E6063 /* RTSPScreenViewController.swift in Sources */,
+				A76EC9B33F55A549B92E6063 /* RTSPScreenViewControllerRx.swift in Sources */,
 				28127111A7C13FDBEECF7B50 /* RTSPScreenModuleInput.swift in Sources */,
+				054C94FC2AFF33F60025A6CC /* CamerasIPFetchService.swift in Sources */,
 				DFC0ABC5540D20ED006D0FD0 /* RTSPScreenPresenter.swift in Sources */,
 				054C94F62AFE57090025A6CC /* VLCMediaPlayer.swift in Sources */,
 				0FF8ED1AEC45B91E399AB2FF /* RTSPScreenInteractorInput.swift in Sources */,

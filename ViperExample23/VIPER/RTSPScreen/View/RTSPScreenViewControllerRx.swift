@@ -7,22 +7,18 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class RTSPScreenViewController: UIViewController, RTSPScreenViewInput {
-    
-    enum Cameras {
-        static let routes: [String] = [
-            "rtsp://178.141.83.23:60555/ajUc3JQx_s/",
-            "rtsp://178.141.83.23:60555/Rrxy9uhI_s/",
-            "rtsp://178.141.83.23:60555/KZNvfCCS_s/",
-            "rtsp://admin:12345@217.9.151.201:555/wwxFTFxX_s/"
-        ]
-    }
+class RTSPScreenViewController: UIViewController {
     
     var output: RTSPScreenViewOutput?
     
     private lazy var collectionView = makeCollectionView()
-
+    
+    private let dataSource = PublishSubject<[String]>()
+    private let disposeBag = DisposeBag()
+    
     // MARK: Life cycle
     override func loadView() {
         super.loadView()
@@ -34,76 +30,37 @@ class RTSPScreenViewController: UIViewController, RTSPScreenViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
         output?.viewIsReady()
+        setupCollectionRx()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         view.backgroundColor = UIColor().randomColor
     }
-
-
-    // MARK: MainScreenViewInput
-    func setupInitialState() {
-    }
-}
-
-// MARK: - UICollectionViewDataSource, UICollectionViewDelegate
-extension RTSPScreenViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-    func collectionView(
-        _ collectionView: UICollectionView,
-        numberOfItemsInSection section: Int
-    ) -> Int {
-        Cameras.routes.count
+    
+    func setupCollectionRx() {
+        dataSource.bind(to: collectionView.rx.items(cellIdentifier: CameraCell.reuseIdentifier)) { (row, urlString: String, cell: CameraCell) in
+            let viewModel = self.prepareViewModel(
+                urlString: urlString,
+                row: row
+            )
+            cell.configureView(viewModel: viewModel)
+        }.disposed(by: disposeBag)
     }
     
-    func collectionView(
-        _ collectionView: UICollectionView,
-        cellForItemAt indexPath: IndexPath
-    ) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: CameraCell.reuseIdentifier,
-            for: indexPath
-        ) as? CameraCell else {
-            return UICollectionViewCell()
-        }
-        
-        guard let url = URL(string: Cameras.routes[indexPath.row]) else {
-            return UICollectionViewCell()
-        }
-        let playerVM = PlayerViewModel(
-            url: url,
-            frame: CGRect(
-                origin: .zero,
-                size: CGSize(width: 200, height: 200)
-            )
-        )
-        let viewModel = CameraCellViewModel(
-            index: indexPath.row,
-            playerVM: playerVM
-        )
-        cell.configureView(viewModel: viewModel)
-        
-        return cell
-    }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
 extension RTSPScreenViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(
-//        _ collectionView: UICollectionView,
-//        layout collectionViewLayout: UICollectionViewLayout,
-//        insetForSectionAt section: Int
-//    ) -> UIEdgeInsets {
-//        return
-//    }
-
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        let size = CGSizeMake(collectionView.bounds.width, 200)
-        
+        let size = CGSizeMake(
+            collectionView.bounds.width,
+            200
+        )
         return size
     }
 }
@@ -120,10 +77,10 @@ extension RTSPScreenViewController {
             frame: .zero,
             collectionViewLayout: flowLayout
         )
-        collection.isPagingEnabled = true
+        collection.isPagingEnabled = false
         
-        collection.dataSource = self
         collection.delegate = self
+        collection.backgroundColor = .clear
         collection.translatesAutoresizingMaskIntoConstraints = false
         return collection
     }
@@ -139,6 +96,27 @@ extension RTSPScreenViewController {
         )
     }
     
+    func prepareViewModel(
+        urlString: String,
+        row: Int
+    ) -> CameraCellViewModel? {
+        guard let url = URL(string: urlString) else {
+            return nil
+        }
+        let playerVM = PlayerViewModel(
+            url: url,
+            frame: CGRect(
+                origin: .zero,
+                size: .zero
+            )
+        )
+        let viewModel = CameraCellViewModel(
+            index: row,
+            playerVM: playerVM
+        )
+        return viewModel
+    }
+    
     func setupLayout() {
         view.addSubview(collectionView)
         
@@ -148,5 +126,16 @@ extension RTSPScreenViewController {
             collectionView.leadingAnchor.constraint(equalTo: view.safeLeadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.safeTrailingAnchor)
         ])
+    }
+}
+
+// MARK: MainScreenViewInput
+extension RTSPScreenViewController: RTSPScreenViewInput {
+    func setupInitialState() {
+        
+    }
+    
+    func updateViewWithCamerasIps(ips: [String]) {
+        dataSource.onNext(ips)
     }
 }

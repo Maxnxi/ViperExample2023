@@ -16,10 +16,9 @@ struct PlayerViewModel {
 
 final
 class PlayerView: UIView {
-    
-    //let url: URL
-    
-    let mediaPlayer : VLCMediaPlayer = VLCMediaPlayer()
+        
+    let playerService: PlayerService = PlayerServiceImp()
+    var mediaPlayer: VLCMediaPlayer?
     
     init() {
         super.init(frame: .zero)
@@ -32,38 +31,18 @@ class PlayerView: UIView {
     
     func configureView(model: PlayerViewModel) {
         
-        
-        let media = VLCMedia(url: model.url)
-        
-        media.addOptions([// Add options here
-            "network-caching": 300,
-            "--rtsp-frame-buffer-size":100,
-            "--vout": "ios",
-            "--glconv" : "glconv_cvpx",
-            "--rtsp-caching=": 150,
-            "--tcp-caching=": 150,
-            "--realrtsp-caching=": 150,
-            "--h264-fps": 20.0,
-            "--mms-timeout": 60000
-        ])
-        
-        mediaPlayer.media = media
-        mediaPlayer.delegate = self
-        mediaPlayer.drawable = self
-        mediaPlayer.audio?.isMuted = true
-        
-        mediaPlayer.videoAspectRatio = UnsafeMutablePointer<Int8>(mutating: ("16:9" as NSString).utf8String)
-        mediaPlayer.play()
-        
-        
+        mediaPlayer = playerService.configureMediaPlayer(url: model.url)
+        mediaPlayer?.delegate = self
+        mediaPlayer?.drawable = self
+        mediaPlayer?.play()
     }
     
     
 }
 
 extension PlayerView: VLCMediaPlayerDelegate {
-    func checkConnection() -> Bool{
-        let isPlaying: Bool = mediaPlayer.isPlaying
+    func checkConnection() -> Bool {
+        let isPlaying: Bool = mediaPlayer?.isPlaying == true
         return isPlaying
     }
 }

@@ -20,6 +20,13 @@ class RTSPScreenPresenter: RTSPScreenModuleInput, RTSPScreenViewOutput, RTSPScre
         print("____ view = ", view)
         print("____ interactor = ", interactor)
         print("____ router = ", router)
+        interactor?.fetchCamerasIP()
+    }
+}
 
+// MARK: - RTSPScreenInteractorOutput
+extension RTSPScreenPresenter {
+    func succesFetchCamerasIPs(ips: [String]) {
+        view?.updateViewWithCamerasIps(ips: ips)
     }
 }

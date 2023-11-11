@@ -35,7 +35,7 @@ extension ApplicationDependency {
 //            .as(check: Player.self) {$0}
         
         container.register(RTSPScreenPresenter.init)
-            .as(check: RTSPScreenModuleInput.self) { $0 }
+            //.as(check: RTSPScreenModuleInput.self) { $0 }
             .as(check: RTSPScreenInteractorOutput.self) { $0 }
             .as(check: RTSPScreenViewOutput.self) { $0 }
 
@@ -51,10 +51,15 @@ extension ApplicationDependency {
             .as(check: RTSPScreenInteractorInput.self) { $0 }
             .lifetime(.objectGraph)
             .injection(\.output)
+            .injection(\.camerasIPFetchService)
         
         container.register(RTSPScreenViewController.self)
             .as(check: RTSPScreenViewInput.self) { $0 }
             .lifetime(.objectGraph)
             .injection(\.output)
+        
+        
+        container.register(CamerasIPFetchServiceImp.init)
+            .as(check: CamerasIPFetchService.self) {$0}
     }
 }

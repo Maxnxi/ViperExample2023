@@ -6,8 +6,26 @@
 //  Copyright © 2023 Max. All rights reserved.
 //
 
+import Foundation
+
 class RTSPScreenInteractor: RTSPScreenInteractorInput {
 
-    weak var output: RTSPScreenInteractorOutput?
+    var camerasIPFetchService: CamerasIPFetchService?
+    var output: RTSPScreenInteractorOutput?
+
+    func fetchCamerasIP() {
+        DispatchQueue.global().async { [weak self] in
+            self?.camerasIPFetchService?.fetchCamerasIPs(completion: { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(let camerasIps):
+                        self?.output?.succesFetchCamerasIPs(ips: camerasIps)
+                    case .failure(let failure):
+                        debugPrint(Self.self, #function)
+                    }
+                }
+            })
+        }
+    }
 
 }
