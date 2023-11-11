@@ -87,10 +87,40 @@ extension RTSPScreenViewController: UICollectionViewDataSource, UICollectionView
     }
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
+extension RTSPScreenViewController: UICollectionViewDelegateFlowLayout {
+//    func collectionView(
+//        _ collectionView: UICollectionView,
+//        layout collectionViewLayout: UICollectionViewLayout,
+//        insetForSectionAt section: Int
+//    ) -> UIEdgeInsets {
+//        return
+//    }
+
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath
+    ) -> CGSize {
+        let size = CGSizeMake(collectionView.bounds.width, 200)
+        
+        return size
+    }
+}
+
 private
 extension RTSPScreenViewController {
     func makeCollectionView() -> UICollectionView {
-        let collection = UICollectionView()
+        let flowLayout = UICollectionViewFlowLayout.init()
+        flowLayout.scrollDirection = .vertical
+        flowLayout.minimumLineSpacing = 50
+        flowLayout.minimumInteritemSpacing = 50
+        
+        let collection = UICollectionView(
+            frame: .zero,
+            collectionViewLayout: flowLayout
+        )
+        collection.isPagingEnabled = true
         
         collection.dataSource = self
         collection.delegate = self
@@ -99,7 +129,7 @@ extension RTSPScreenViewController {
     }
     
     func commonInit() {
-        
+        registerCells()
     }
     
     func registerCells() {
