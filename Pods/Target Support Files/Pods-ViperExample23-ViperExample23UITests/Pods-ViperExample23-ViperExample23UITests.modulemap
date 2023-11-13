@@ -1,0 +1,6 @@
+module Pods_ViperExample23_ViperExample23UITests {
+  umbrella header "Pods-ViperExample23-ViperExample23UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
